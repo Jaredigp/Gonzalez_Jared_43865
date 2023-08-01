@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocupacion</title>
+</head>
+<body bgcolor = "lightgray">
+     
+    <h1>Ocupación de los integrantes de la familia</h1>
+    <hr>
+    {% for ocupacion_familiares in ocupacion %}
+    <ul>
+        <li>
+        <h3>{{ ocupacion_familiares.id }} - {{ocupacion_familiares.nivel_estudios}} - {{ocupacion_familiares.puesto}}</h3>
+        </li>
+    </ul>
+    {% endfor %}
+    <hr>
+</body>
+</html>
